@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Book Detail
+{% endblock%}
+
+
+{% block body %}
+<div class="container">
+    <h1>Details:</h1>
+    <p>Item : {{ware.name_ware}}</p>
+    <p>Image : <img src="{{ware.picture.url}}" alt="Cover Image" width="200px"></p>
+    <p>Contact_info : {{ware.contact_info}}</p>
+    <p>Price : {{ware.price}}</p>
+    <p>Duration : {{ware.duration}}</p>
+    <p>About : {{ware.about}}</p>
+    <p>Insurance : {{ware.insurance}}</p>
+    <p>location : {{ware.location}}</p>
+
+    
+    <a href="{% url 'delete-ware' ware.id%}"><input type="submit" value="Delete ware" class="btn"> </a>
+</div>
+{% endblock %}

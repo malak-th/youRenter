@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title%}
+    Home Page
+{% endblock %}
+
+{% block body %}
+ 
+
+    <div class="navbar">
+    
+          <p>help you to rent and use any thing you need it, for limited time,littel cost.</p>
+    </div>
+
+
+
+   <div id="featurs">
+  
+    {% if messages %}
+   <div class="msgs">
+       {% for i in messages %}
+          <p>{{i}}</p>
+       {% endfor %}
+   </div>
+    {% endif %}
+
+   {% for i in item %}
+   
+    <div class="box">
+      <p><a href="{{i.get_absolute_url}}">{{i.name_ware}}</a> </p>
+      <p>{{i.duration}} </p><p> {{i.publish_on |date:"D d M Y"}}</p>
+    </div>
+   
+     {% empty %} 
+      <p>No item is found</p>
+   {% endfor %}
+      <a href="{% url 'add' %}"><input type="submit" value="Add New Ware" class="btn"></a>
+      <div>
+          
+      </div>   
+  </section>  
+ </div>
+</div>
+{% endblock %}

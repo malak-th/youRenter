@@ -1,0 +1,123 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 20px;
+  font: 20px sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url('imge/cta01.jpg');
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      
+}
+
+.container {
+  width: 50% ;
+  margin: 30px auto ;
+  padding: 30px; 
+  background-color: #060707a1;
+  
+ 
+}
+
+.msgs {
+  background-color: rgb(85, 24, 2);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+.box {
+  border-radius: 50px;
+  background-color: #060707a1 ;
+  padding: 30px;
+  margin: 30px auto ;
+  border: 1px solid #a7b3a44b;
+  overflow: scroll;
+  
+}
+.box p a {
+  color: white;
+
+
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+label {
+  display: block;
+}
+
+.btn {
+  width: 90%;
+  background-color: #0b1011;
+  color: white;        
+  
+}
+
+.errorlist li {
+  color: red;
+}
+
+
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px;    
+  overflow: hidden;
+}
+
+.navbar h1 {
+  float: left;
+  font-size: 50px;
+
+}
+
+.navbar ul {
+  float: right;
+  list-style: none;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  
+}
+
+
+#featurs{
+
+      }
+#featurs .box{
+          float: left;
+          width:33%;
+          padding: 40px;
+          text-align: center;
+          height: 200px;
+      }
+
